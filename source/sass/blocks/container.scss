@@ -1,0 +1,12 @@
+.container {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-min) {
+    width: 723px;
+  }
+
+  @media (min-width: $desktop-min) {
+    width: 1070px;
+  }
+}

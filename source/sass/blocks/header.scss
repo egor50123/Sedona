@@ -1,0 +1,24 @@
+.header {
+
+}
+.header__top {
+
+}
+.header__nav {
+
+}
+.header__footer {
+  display: flex;
+  justify-content: center;
+  height: 389px;
+  width: 100%;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header__footer-box {
+  margin-top: 90px;
+  width: 282px;
+  height: 214px;
+}
+.header__footer-img {}
