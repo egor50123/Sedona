@@ -12,13 +12,39 @@
   justify-content: center;
   height: 389px;
   width: 100%;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-size: cover;
+  background-image: url("../img/bg-intro-triangle-mobile.svg"),
+  url("../img/bg-back-mobile@1x.jpg");
+  background-size: 100%, cover;
   background-repeat: no-repeat;
+  background-position: bottom, top;
+
+  @media (min-width: $tablet-min) {
+    height: 518px;
+    background-image: url("../img/bg-intro-triangle-tablet.svg"),
+    url("../img/bg-back-tablet@1x.jpg");
+  }
+
+  @media (min-width: $desktop-min) {
+    height: 518px;
+    background-image: url("../img/bg-intro-triangle-desktop.svg"),
+    url("../img/bg-back-desktop@1x.jpg");
+  }
 }
 .header__footer-box {
   margin-top: 90px;
   width: 282px;
   height: 214px;
+
+  @media (min-width: $tablet-min) {
+    margin-top: 77px;
+    width: 461px;
+    height: 350px;
+  }
+
+  @media (min-width: $desktop-min) {
+    margin-top: 78px;
+    width: 460px;
+    height: 350px;
+  }
 }
 .header__footer-img {}
