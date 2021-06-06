@@ -1,0 +1,24 @@
+.button {
+  display: flex;
+  justify-content: center;
+  height: 58px;
+  min-height: 58px;
+  color: white;
+  background-color: $blue;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+  padding: 0 15px;
+  padding-top: 14.5px;
+  padding-bottom: 17.5px;
+
+  @media (min-width: $tablet-min) {
+    padding-top: 15.5px;
+    padding-bottom: 16.5px;
+  }
+
+  @media (min-width: $desktop-min) {
+    padding-top: 14.5px;
+    padding-bottom: 17.5px;
+  }
+}

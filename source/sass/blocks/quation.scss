@@ -1,0 +1,52 @@
+.quation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 49px;
+  margin-top: 33px;
+
+  @media (min-width: $tablet-min) {
+    width: 458px;
+      margin: 58px auto;
+  }
+
+  @media (min-width: $desktop-min) {
+    margin-bottom: 66px;
+    margin-top: 58px;
+  }
+}
+.quation__title {
+  @include title-text;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-min) {
+    margin-bottom: 41px;
+  }
+}
+
+.quation__text {
+  @include text;
+  margin-bottom: 35px;
+
+  @media (max-width: $mobile-max) {
+    & br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-min) {
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: $tablet-min) {
+    margin-bottom: 49px;
+  }
+}
+
+.quation__button {
+  width: 100%;
+}

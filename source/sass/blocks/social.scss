@@ -1,3 +1,17 @@
-.social {}
-.social__wrapper {}
+.social {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-min) {
+    width: 151px;
+  }
+}
+.social__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 46px;
+  background-color: $blue;
+}
 .social__img {}
