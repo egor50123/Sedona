@@ -1,0 +1,20 @@
+@mixin title-text {
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  @media (min-width: $tablet-min) {
+    font-size: 21px;
+  }
+}
+
+@mixin text {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-min) {
+    font-size: 14px;
+  }
+}

@@ -1,5 +1,82 @@
-.reason {}
-.reason__title {}
-.reason__number {}
-.reason__text {}
-.reason--other {}
+.reason {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: $blue;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  min-height: 167px;
+
+  @media (max-width: $mobile-max) {
+    &--first-mobile {
+      background-image: url("../img/second-triangle.svg");
+      background-position: 0 -1px;
+      background-repeat: no-repeat;
+      background-size: 100% 37px;
+      min-height: 227px;
+    }
+  }
+
+  &--other{
+    width: 280px;
+    margin: 0 auto;
+    background-color: inherit;
+    color: black;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #D6D6D6;
+    }
+  }
+
+  @media (min-width: $tablet-min) {
+    width: auto;
+    border: none;
+  }
+}
+
+.reason__title {
+  margin-top: 39px;
+  margin-bottom: 21px;
+  @include title-text;
+
+  & br {
+    display: none;
+  }
+
+  &--first-mobile{
+    margin-top: 71px;
+  }
+
+  @media (min-width: $tablet-min) {
+    margin-top: 41px;
+
+    & br {
+      display: block;
+    }
+  }
+}
+
+.reason__number {
+  margin-bottom: 25px;
+  @include text;
+
+  @media (min-width: $tablet-min) {
+    margin-bottom: 19px;
+  }
+}
+.reason__text {
+  margin-bottom: 39px;
+  padding: 0 6%;
+  @include text;
+
+  @media (min-width: $tablet-min) {
+    margin-bottom: 44px;
+    padding: 0 13.2%;
+  }
+
+  @media (min-width: $desktop-min) {
+    margin-bottom: 53px;
+    padding: 0 13%;
+  }
+}
