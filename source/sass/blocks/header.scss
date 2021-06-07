@@ -18,16 +18,31 @@
   background-repeat: no-repeat;
   background-position: bottom, top;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-intro-triangle-mobile.svg"),
+    url("../img/bg-back-mobile@2x.jpg");
+  }
+
   @media (min-width: $tablet-min) {
     height: 518px;
     background-image: url("../img/bg-intro-triangle-tablet.svg"),
     url("../img/bg-back-tablet@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-intro-triangle-tablet.svg"),
+      url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-min) {
     height: 518px;
     background-image: url("../img/bg-intro-triangle-desktop.svg"),
     url("../img/bg-back-desktop@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-intro-triangle-desktop.svg"),
+      url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 }
 .header__footer-box {
