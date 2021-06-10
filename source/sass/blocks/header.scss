@@ -16,7 +16,7 @@
   url("../img/bg-back-mobile@1x.jpg");
   background-size: 100%, cover;
   background-repeat: no-repeat;
-  background-position: bottom, top;
+  background-position: 0 100.2%, top;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg-intro-triangle-mobile.svg"),

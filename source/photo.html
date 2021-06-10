@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet"  href="css/style.min.css">
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="header__top">
+        <nav class="header__nav main-nav">
+          <ul class="main-nav__list">
+            <ul class="main-nav__list-box">
+              <li class="main-nav__item main-nav__item--first">
+                <div class="main-nav__container">
+                  <a class="main-nav__item-link" href="index.html"><span>Главная</span></a>
+                  <img class="main-nav__icon" src="img/icon-cross.svg" alt="">
+                </div>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="photo.html"><span>Фото и видео</span></a>
+              </li>
+            </ul>
+            <li class="main-nav__logo">
+              <div class="main-nav__container">
+                <a href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                    <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                    <img src="img/logo-sedona-mobile.svg"  alt="Sedona">
+                  </picture>
+                </a>
+                <img class="main-nav__icon main-nav__icon--menu" src="img/icon-menu.svg" alt="" width="22" height="22">
+              </div>
+            </li>
+            <ul class="main-nav__list-box">
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="#"><span>Форма и отзывы</span></a>
+              </li>
+              <li class="main-nav__item main-nav__item--border-bottom">
+                <a class="main-nav__item-link" href="#"><span>HTML ACADEMY</span></a>
+              </li>
+            </ul>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__footer">
+        <div class="header__footer-box">
+          <img src="img/text-sedona-index.svg" alt="" class="header__footer-img"></div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main__title-box">
+        <h1 class="main__title">Фото и видео</h1>
+        <p class="main__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      </div>
+      <section class="galery">
+        <div class="galery__list">
+          <a href="#" class="galery__item card-photo">
+            <div class="card-photo__img-wrapper">
+              <picture>
+                <img src="" alt="">
+              </picture>
+            </div>
+            <div class="card-photo__footer">
+              <p class="card-photo__text"><span class="card-photo__name">Неродные просторы</span><span class="card-photo__autor">Автор фото: Борис</span></p>
+              <span class="card-photo__likes">1350</span>
+            </div>
+          </a>
+          <a href="#" class="galery__item card-photo">
+            <div class="card-photo__img-wrapper">
+              <picture
+              ><img src="" alt="">
+            </picture>
+            </div>
+            <div class="card-photo__footer">
+              <p class="card-photo__text"><span class="card-photo__name">Местная растительность</span><span class="card-photo__autor">Автор фото: Сергей</span></p>
+              <span class="card-photo__likes">143</span>
+            </div>
+          </a>
+          <a href="#" class="galery__item card-photo">
+            <div class="card-photo__img-wrapper">
+              <picture>
+                <img src="" alt="">
+              </picture>
+            </div>
+            <div class="card-photo__footer">
+              <p class="card-photo__text"><span class="card-photo__name">дорого на север</span><span class="card-photo__autor">Автор фото: Петр</span></p>
+              <span class="card-photo__likes">96</span>
+            </div>
+          </a>
+          <a href="#" class="galery__item card-photo">
+            <div class="card-photo__img-wrapper">
+              <picture>
+                <img src="" alt="">
+              </picture>
+            </div>
+            <div class="card-photo__footer">
+              <p class="card-photo__text"><span class="card-photo__name">Мост дьявола</span><span class="card-photo__autor">Автор фото: Антон</span></p>
+              <span class="card-photo__likes">254</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="video">
+        <div class="video__title-box">
+          <h2 class="video__title">Все еще сомневаетесь?</h2>
+          <p class="description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        </div>
+        <div class="video__img-wrapper"></div>
+        <div class="video__wrapper-items">
+          <div class="video__track"></div>
+          <div class="video__toggles"></div>
+        </div>
+      </section>
+    </main> 
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <span class="footer__logo">#visitSEDONA</span>
+        <div class="footer__social social">
+          <a class="social__wrapper" href="#"><img src="img/icon-twitter.svg" alt="twitter" class="social__img"></a>
+          <a class="social__wrapper" href="#"><img src="img/icon-facebook.svg" alt="facebook" class="social__img"></a>
+          <a class="social__wrapper" href="#"><img src="img/icon-youtube.svg" alt="youtube" class="social__img"></a>
+        </div>
+        <a class="footer__copyright copyright" href="#">
+          <span class="copyright__text">Разработано</span>
+          <img src="img/logo-htmlacademy.svg" alt="" class="copyright__img">
+        </a>
+      </div>  
+    </footer>
