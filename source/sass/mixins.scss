@@ -19,3 +19,11 @@
     line-height: 24px;
   }
 }
+
+@mixin text-setting ($size,$height,$weight) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+}
+
+/*ОСТАВИТЬ ТОЛЬКО ПОСЛЕДНИЙ МИКСИН*/

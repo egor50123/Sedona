@@ -59,47 +59,91 @@
       <section class="galery">
         <div class="galery__list">
           <a href="#" class="galery__item card-photo">
-            <div class="card-photo__img-wrapper">
-              <picture>
-                <img src="" alt="">
-              </picture>
-            </div>
-            <div class="card-photo__footer">
-              <p class="card-photo__text"><span class="card-photo__name">Неродные просторы</span><span class="card-photo__autor">Автор фото: Борис</span></p>
-              <span class="card-photo__likes">1350</span>
-            </div>
-          </a>
-          <a href="#" class="galery__item card-photo">
-            <div class="card-photo__img-wrapper">
-              <picture
-              ><img src="" alt="">
-            </picture>
-            </div>
-            <div class="card-photo__footer">
-              <p class="card-photo__text"><span class="card-photo__name">Местная растительность</span><span class="card-photo__autor">Автор фото: Сергей</span></p>
-              <span class="card-photo__likes">143</span>
-            </div>
-          </a>
-          <a href="#" class="galery__item card-photo">
-            <div class="card-photo__img-wrapper">
-              <picture>
-                <img src="" alt="">
-              </picture>
-            </div>
-            <div class="card-photo__footer">
-              <p class="card-photo__text"><span class="card-photo__name">дорого на север</span><span class="card-photo__autor">Автор фото: Петр</span></p>
-              <span class="card-photo__likes">96</span>
+            <div class="card-photo__container">
+              <div class="card-photo__img-wrapper card-photo__img-wrapper--main">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
+                  <source media="(min-width:1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                  <source media="(min-width:768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">                
+                  <img src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg" alt="sunset" width="280" height="280">
+                </picture>                
+              </div>
+              <div class="card-photo__footer card-photo__footer--main">
+                <p class="card-photo__text"><span class="card-photo__name">Неродные просторы</span><span class="card-photo__autor">Автор фото: Борис</span></p>
+                <div class="card-photo__likes-wrapper">
+                  <svg width="23" height="21">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>                  
+                  <span class="card-photo__likes">1350</span>
+                </div>
+              </div>
             </div>
           </a>
           <a href="#" class="galery__item card-photo">
-            <div class="card-photo__img-wrapper">
-              <picture>
-                <img src="" alt="">
-              </picture>
+            <div class="card-photo__container">
+              <div class="card-photo__img-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
+                  <source media="(min-width:1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                  <source media="(min-width:768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                  <img src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg" alt="cactus" width="280" height="280">
+                </picture>
+              </div>
+              <div class="card-photo__footer">
+                <p class="card-photo__text"><span class="card-photo__name">Местная растительность</span><span class="card-photo__autor">Автор фото: Сергей</span></p>
+                <div class="card-photo__likes-wrapper">
+                  <svg width="23" height="21">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                  <span class="card-photo__likes">143</span>
+                </div>
+              </div>
             </div>
-            <div class="card-photo__footer">
-              <p class="card-photo__text"><span class="card-photo__name">Мост дьявола</span><span class="card-photo__autor">Автор фото: Антон</span></p>
-              <span class="card-photo__likes">254</span>
+          </a>
+          <a href="#" class="galery__item card-photo">
+            <div class="card-photo__container">
+              <div class="card-photo__img-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
+                  <source media="(min-width:1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                  <source media="(min-width:768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                  <img src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg" alt="roads" width="280" height="280">
+                </picture>
+              </div>
+              <div class="card-photo__footer card-photo__footer--color">
+                <p class="card-photo__text"><span class="card-photo__name">дорога на север</span><span class="card-photo__autor">Автор фото: Петр</span></p>
+                <div class="card-photo__likes-wrapper">
+                  <svg width="23" height="21">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                  <span class="card-photo__likes">96</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="galery__item card-photo">
+            <div class="card-photo__container">
+              <div class="card-photo__img-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+                  <source media="(min-width:1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width:768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">                
+                  <img src="img/photo-bridge-mobile@1x.jpg" src="photo-bridge-mobile@2x.jpg" alt="bridge" width="280" height="280">
+                </picture>
+              </div>
+              <div class="card-photo__footer">
+                <p class="card-photo__text"><span class="card-photo__name">Мост дьявола</span><span class="card-photo__autor">Автор фото: Антон</span></p>
+                <div class="card-photo__likes-wrapper">
+                  <svg width="23" height="21">
+                     <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                  <span class="card-photo__likes">254</span>
+                </div>
+              </div>
             </div>
           </a>
         </div>
@@ -108,12 +152,36 @@
       <section class="video">
         <div class="video__title-box">
           <h2 class="video__title">Все еще сомневаетесь?</h2>
-          <p class="description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они<br> не подорожали в очередной раз!</p>
         </div>
-        <div class="video__img-wrapper"></div>
+        <div class="video__img-wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+            <source media="(min-width:1200px)" srcset="img/videos-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width:768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg" alt="roads" width="320" height="201">
+          </picture>          
+        </div>
         <div class="video__wrapper-items">
-          <div class="video__track"></div>
-          <div class="video__toggles"></div>
+          <div class="video__track-wrapper">
+            <div tabindex="0" class="video__track"></div>
+          </div>
+          <div class="video__toggles">
+            <div class="video__toggles-container">
+              <svg tabindex="0" class="video__replay" width="16" height="20">
+                <use xlink:href="img/sprite.svg#icon-video-replay"></use>
+              </svg>            
+              <div class="video__toggles-wrapper">
+                <svg tabindex="0" class="video__subtitles" width="32" height="20">
+                  <use xlink:href="img/sprite.svg#icon-video-subtitles"></use>
+                </svg>
+                <svg tabindex="0" class="video__fullscreen" width="20" height="20">
+                  <use xlink:href="img/sprite.svg#icon-video-fullscreen"></use>
+                </svg>              
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main> 
@@ -122,9 +190,21 @@
       <div class="footer__wrapper">
         <span class="footer__logo">#visitSEDONA</span>
         <div class="footer__social social">
-          <a class="social__wrapper" href="#"><img src="img/icon-twitter.svg" alt="twitter" class="social__img"></a>
-          <a class="social__wrapper" href="#"><img src="img/icon-facebook.svg" alt="facebook" class="social__img"></a>
-          <a class="social__wrapper" href="#"><img src="img/icon-youtube.svg" alt="youtube" class="social__img"></a>
+          <a class="social__wrapper" href="#">
+            <svg width="17.5" height="15">
+              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+          <a class="social__wrapper" href="#">
+            <svg width="8.7" height="18.9">
+              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+          <a class="social__wrapper" href="#">
+            <svg width="20" height="14">
+              <use xlink:href="img/sprite.svg#icon-youtube"></use>
+            </svg>
+          </a>
         </div>
         <a class="footer__copyright copyright" href="#">
           <span class="copyright__text">Разработано</span>
@@ -132,3 +212,5 @@
         </a>
       </div>  
     </footer>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+.card-photo {
+  border-top: 1px solid $grey;
+  padding-top: 22px;
+  padding-bottom: 15px;
+  color: black;
+
+  &:last-child {
+    border-bottom: 1px solid $grey;
+
+    @media (min-width: $tablet-min) {
+      border: none;
+    }
+  }
+
+  @media (min-width: $tablet-min) {
+    padding: 0;
+    border: none;
+
+    &:first-child {
+      grid-column: 1/-1;
+    }
+  }
+}
+
+.card-photo__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 87.5%;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-min) {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.card-photo__img-wrapper {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  margin-bottom: 11px;
+
+  & img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  @media (min-width: $tablet-min) {
+    height: 267px;
+    margin: 0;
+
+   &--main {
+    height: 400px;
+   }
+  }
+}
+.card-photo__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @media (min-width: $tablet-min) {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 22px;
+    padding-bottom: 15px;
+    padding-right: 6.1%;
+    padding-left: 5.9%;
+    background-color: $grey-1;
+    height: calc(100% - 267px);
+
+    &--color {
+      background-color: $grey-2;
+    }
+
+    &--main {
+      height: calc(100% - 400px);
+      padding-right: 3.1%;
+      padding-left: 3.1%;
+    }
+
+    @media (min-width: $desktop-min) {
+      position: absolute;
+      color: white;
+      bottom: 0;
+      height: auto;
+      background-color: rgba(#000,0.3);
+
+      &--main {
+      padding-right: 1.75%;
+      padding-left: 1.75%;
+      }
+    }
+  }
+}
+.card-photo__text {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-min) {
+    margin: 0;
+  }
+}
+
+.card-photo__name, {
+  @include text-setting (14px,24px,700);
+  text-transform: uppercase;
+}
+
+.card-photo__autor {
+  @include text-setting (14px,24px,400);
+}
+
+.card-photo__likes-wrapper {
+  display: flex;
+
+  & svg {
+    fill: black;
+
+    @media (min-width: $tablet-min) {
+      opacity: 0.3;
+    }
+
+    @media (min-width: $desktop-min) {
+      opacity: 1;
+      fill: white;
+    }    
+  }
+
+  @media (min-width: $tablet-min) {
+    margin-top: 8px;
+  }
+}
+
+.card-photo__likes {
+  position: relative;
+  text-align: left;
+  @include text-setting (14px,24px,700);
+  text-transform: uppercase;
+  margin-left: 14px;
+  top: 2.5px;
+}

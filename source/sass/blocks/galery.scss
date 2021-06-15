@@ -1,0 +1,30 @@
+.galery {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 11px;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-min) {
+    width: 84.3%;
+    margin-top: 12.5px;
+    margin-bottom: 59px;
+  }
+
+  @media (min-width: $desktop-min) {
+    margin-bottom: 63px;
+    margin-top: 14.5px;
+  }
+}
+.galery__list {
+  display: grid;
+
+  @media (min-width: $tablet-min) {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(200px, auto);
+  }
+
+  @media (min-width: $desktop-min) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.galery__item {}

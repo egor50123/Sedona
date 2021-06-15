@@ -69,7 +69,7 @@
               <source type="image/webp" media="(min-width: 768px)" srcset="img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x">
               <source media="(min-width:1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
               <source media="(min-width:768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
-              <img src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg" alt="city" width="320" height="260">
+              <img src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="city" width="320" height="260">
             </picture>
           </div>
         </div>
@@ -108,7 +108,7 @@
               <source type="image/webp" media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.webp 1x, img/main-bridge-tablet@2x.webp 2x">
               <source media="(min-width:1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
               <source media="(min-width:768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
-              <img src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg" alt="bridge" width="320" height="260">
+              <img src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="bridge" width="320" height="260">
             </picture>
           </div>
         </div>
@@ -146,9 +146,21 @@
       <div class="footer__wrapper">
         <span class="footer__logo">#visitSEDONA</span>
         <div class="footer__social social">
-          <a class="social__wrapper" href="#"><img src="img/icon-twitter.svg" alt="twitter" class="social__img"></a>
-          <a class="social__wrapper" href="#"><img src="img/icon-facebook.svg" alt="facebook" class="social__img"></a>
-          <a class="social__wrapper" href="#"><img src="img/icon-youtube.svg" alt="youtube" class="social__img"></a>
+          <a class="social__wrapper" href="#">
+            <svg width="17.5" height="15">
+              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+          <a class="social__wrapper" href="#">
+            <svg width="8.7" height="18.9">
+              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+          <a class="social__wrapper" href="#">
+            <svg width="20" height="14">
+              <use xlink:href="img/sprite.svg#icon-youtube"></use>
+            </svg>
+          </a>
         </div>
         <a class="footer__copyright copyright" href="#">
           <span class="copyright__text">Разработано</span>

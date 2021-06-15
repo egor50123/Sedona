@@ -11,6 +11,8 @@ const imagemin = require("gulp-imagemin");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
 const WEBP = require("gulp-webp");
+const cheerio = require('gulp-cheerio');
+const replace = require('gulp-replace');
 
 // Styles
 
@@ -54,9 +56,17 @@ exports.webp = webp;
 
 const sprite = () => {
   return gulp.src("source/img/**/icon-*.svg")
+  .pipe(cheerio({
+      run: function ($) {
+        $('[fill]').removeAttr('fill');
+        $('[style]').removeAttr('style');
+      },
+      parserOptions: { xmlMode: true }
+    }))
+  .pipe(replace('&gt;', '>'))
   .pipe(svgstore())
   .pipe(rename("sprite.svg"))
-  .pipe(gulp.dest("build/img"))}
+  .pipe(gulp.dest("source/img"))}
 exports.sprite = sprite;
 
 //copy
@@ -97,6 +107,7 @@ const server = (done) => {
 exports.server = server;
 
 gulp.task("build", gulp.series(clean,copy,css,sprite));
+gulp.task("sprite", gulp.series(sprite));
 
 // Watcher
 

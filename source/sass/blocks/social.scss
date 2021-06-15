@@ -13,5 +13,10 @@
   height: 48px;
   width: 46px;
   background-color: $blue;
+  color: white;
+
+  & svg {
+    fill: currentColor;
+  }
 }
 .social__img {}
