@@ -1,0 +1,33 @@
+.form-sumbit {
+  margin: 0 auto;
+  width: 280px;
+  padding-bottom: 9.5px;
+
+  @media (min-width: $tablet-min) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 84.3%;
+    padding-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-min) {
+    width: 960px;
+  }
+}
+
+.form-sumbit__button {
+  width: 100%;
+}
+.form-submit__text {
+  display: none;
+
+  @media (min-width: $tablet-min) {
+    margin-left: auto;
+    display: block;
+
+    @include text-setting (18px, 26px, 400);
+    text-transform: uppercase;
+    color: $light-black;
+  }
+}

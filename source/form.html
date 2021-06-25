@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet"  href="css/style.min.css">
+    <link rel="stylesheet"  href="css/normalize.css">
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="header__top">
+        <nav class="header__nav main-nav">
+          <ul class="main-nav__list">
+            <ul class="main-nav__list-box">
+              <li class="main-nav__item main-nav__item--first">
+                <div class="main-nav__container">
+                  <a class="main-nav__item-link" href="index.html"><span>Главная</span></a>
+                  <img class="main-nav__icon" src="img/icon-cross.svg" alt="">
+                </div>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="photo.html"><span>Фото и видео</span></a>
+              </li>
+            </ul>
+            <li class="main-nav__logo">
+              <div class="main-nav__container">
+                <a href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                    <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                    <img src="img/logo-sedona-mobile.svg"  alt="Sedona">
+                  </picture>
+                </a>
+                <img class="main-nav__icon main-nav__icon--menu" src="img/icon-menu.svg" alt="" width="22" height="22">
+              </div>
+            </li>
+            <ul class="main-nav__list-box">
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="#"><span>Форма и отзывы</span></a>
+              </li>
+              <li class="main-nav__item main-nav__item--border-bottom">
+                <a class="main-nav__item-link" href="#"><span>HTML ACADEMY</span></a>
+              </li>
+            </ul>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__footer">
+        <div class="header__footer-box">
+          <img src="img/text-sedona-index.svg" alt="" class="header__footer-img"></div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main__title-box">
+        <h1 class="main__title">Оставьте свой отзыв</h1>
+        <p class="main__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </div>
+
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <section class="form">
+          <ul class="form__list">
+            <li class="form__item">
+              <div class="form__item-container form-card">
+                <h2 class="form-card__title form-card__title--first">Предсавьтесь:</h2>
+                <div class="form-card__list">
+                  <label class="form-card__item form-card__item">
+                    <p class="form-card__text">Имя*:</p>
+                    <input type="text" class="form-card__input form-card__input--first" required placeholder="Петр">
+                  </label>
+                  <label class="form-card__item">
+                    <p class="form-card__text">Фамилия*:</p>
+                    <input type="text" class="form-card__input form-card__input--first" required placeholder="Иванов">
+                  </label>
+                  <label class="form-card__item">
+                    <p class="form-card__text">Отчество:</p>
+                    <input type="text" class="form-card__input form-card__input--first" placeholder="Иванович">
+                  </label>
+                </div>
+              </div>
+            </li>
+            <li class="form__item">
+              <div class="form__item-container form-card">
+                <h2 class="form-card__title form-card__title--second title-lines">Контактная информация:</h2>
+                <div class="form-card__list form-card__list--second">
+                  <label class="form-card__item form-card__item--second">
+                    <p class="form-card__text form-card__text--second"><span>Контактный</span> телефон*:</p>
+                    <input type="tel" class="form-card__input form-card__input--second" required placeholder="Введите телефон">
+                  </label>
+                  <label class="form-card__item form-card__item--second form-card__item--second">
+                    <p class="form-card__text form-card__text--second">Электронная почта*:</p>
+                    <input type="email" class="form-card__input form-card__input--second" required placeholder="Введите e-mail">
+                  </label>
+                </div>
+              </div>
+            </li>
+            <li class="form__item">
+              <div class="form__item-container form-card">
+                <h2 class="form-card__title form-card__title--change">Ваше общее впечатление:</h2>
+                <div class="form-card__list form-card__list--change">
+                  <label class="form-card__item form-card__item--change">                    
+                    <input type="radio" class="form-card__input form-card__input--change" name="rate">
+                    <span class="form-card__radio"></span>
+                    <p class="form-card__text form-card__text--change">Скорее положительное</p>
+                  </label>
+                  <label class="form-card__item form-card__item--change">
+                    <input type="radio" class="form-card__input form-card__input--change" name="rate">
+                    <span class="form-card__radio"></span>
+                    <p class="form-card__text form-card__text--change">Скорее отрицательное</p>
+                  </label>
+                  <label class="form-card__item form-card__item--change">
+                    <input type="radio" class="form-card__input form-card__input--change" name="rate" checked>
+                    <span class="form-card__radio"></span>
+                    <p class="form-card__text form-card__text--change">Затрудняюсь ответить</p>
+                  </label>
+                </div>
+              </div>
+            </li>
+            <li class="form__item">
+              <div class="form__item-container form-card">
+                <h2 class="form-card__title form-card__title--checkbox title-lines">Посещенные<br> достопримечательности:</h2>
+                <div class="form-card__list form-card__list--checkbox">
+                  <label class="form-card__item form-card__item--checkbox">                    
+                    <input type="checkbox" class="form-card__input form-card__input--checkbox" checked>
+                    <span class="form-card__checbox"></span>
+                    <p class="form-card__text form-card__text--checkbox">Мост Дьявола</p>
+                  </label>
+                  <label class="form-card__item form-card__item--checkbox">
+                    <input type="checkbox" class="form-card__input form-card__input--checkbox" checked>
+                    <span class="form-card__checbox"></span>
+                    <p class="form-card__text form-card__text--checkbox">Гора-Колокол</p>
+                  </label>
+                  <label class="form-card__item form-card__item--checkbox">                    
+                    <input type="checkbox" class="form-card__input form-card__input--checkbox" checked>
+                    <span class="form-card__checbox"></span>
+                    <p class="form-card__text form-card__text--checkbox">Слайд-парк</p>
+                  </label>
+                  <label class="form-card__item form-card__item--checkbox">                    
+                    <input type="checkbox" class="form-card__input form-card__input--checkbox">
+                    <span class="form-card__checbox"></span>
+                    <p class="form-card__text form-card__text--checkbox">Красные скалы</p>
+                  </label>                  
+                </div>
+              </div>
+            </li>
+            <li class="form__item">
+              <div class="form__item-container form-card">
+                <h2 class="form-card__title title-lines"><span>Опишите свои эмоции:</span></h2>
+                <div class="form-card__list form-card__list--comment">
+                  <textarea class="form-card__comment" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="form-sumbit">
+            <button type="submit" class="form-sumbit__button button">ОТПРАВИТЬ ОТЗЫВ</button>
+            <span class="form-submit__text">* — обязательные поля</span></div>
+        </section>
+      </form>
+    </main> 
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <span class="footer__logo">#visitSEDONA</span>
+        <div class="footer__social social">
+          <a class="social__wrapper" href="#">
+            <svg width="17.5" height="15">
+              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+          <a class="social__wrapper" href="#">
+            <svg width="8.7" height="18.9">
+              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+          <a class="social__wrapper" href="#">
+            <svg width="20" height="14">
+              <use xlink:href="img/sprite.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </div>
+        <a class="footer__copyright copyright" href="#">
+          <span class="copyright__text">Разработано</span>
+          <img src="img/logo-htmlacademy.svg" alt="" class="copyright__img">
+        </a>
+      </div>  
+    </footer>
+  </body>
+</html>

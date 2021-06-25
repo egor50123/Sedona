@@ -1,0 +1,35 @@
+.title-lines {
+  @media (min-width: $tablet-min){
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    &::before,
+    &::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      height: 1px;
+      width: 19%;
+      background-color: #DBDBDB;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }    
+  }
+
+  @media (min-width: $desktop-min) {
+    &::before,
+    &::after {
+      width: 280px;
+    }
+  }
+}
