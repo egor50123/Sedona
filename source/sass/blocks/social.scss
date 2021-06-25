@@ -14,9 +14,23 @@
   width: 46px;
   background-color: $blue;
   color: white;
+  cursor: pointer;
 
   & svg {
     fill: currentColor;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #669EC0;
+  }
+
+  &:active {
+    background-color: #5496BD;
+
+    & svg {
+      opacity: 0.3;
+    }
   }
 }
 .social__img {}

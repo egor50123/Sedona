@@ -55,6 +55,18 @@
     flex-basis: 239px;
     padding: 0 30px;
   }
+
+  & a:hover,
+  & a:focus {
+    color: #81B3D2;
+    outline: none;
+    transition: all 0.4s;
+  }
+
+  & a:active {
+    opacity: 0.3;
+  }
+
 }
 
 .main-nav__container{

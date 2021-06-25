@@ -4,7 +4,7 @@
   height: 58px;
   min-height: 58px;
   color: white;
-  background-color: $blue;
+  background: $gr;
   text-transform: uppercase;
   font-size: 21px;
   line-height: 26px;
@@ -22,4 +22,14 @@
     padding-top: 14.5px;
     padding-bottom: 17.5px;
   }
+
+  &:hover,
+  &:focus {
+    background: #669EC0;
+    transition: all 1s;
+  }
+
+  &:active {
+    background: #5496BD;
+  }  
 }
