@@ -1,6 +1,9 @@
 .features {
   display: grid;
   grid-auto-rows: minmax(256px, auto);
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 5%;
 }
 .features__row {
   display: grid;

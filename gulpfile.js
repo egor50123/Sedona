@@ -106,7 +106,7 @@ const server = (done) => {
   done();}
 exports.server = server;
 
-gulp.task("build", gulp.series(clean,copy,css,sprite));
+gulp.task("build", gulp.series(clean,sprite,css,copy));
 gulp.task("sprite", gulp.series(sprite));
 
 // Watcher
